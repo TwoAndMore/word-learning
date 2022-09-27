@@ -1,0 +1,38 @@
+@import "../../styles/utils/vars";
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__table {
+    border-collapse: collapse;
+    min-width: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+
+    & thead tr {
+      background-color: $base-color;
+      color: #fff;
+    }
+
+    & th,
+    & td {
+      text-align: center;
+      padding: 12px 15px;
+    }
+
+    & tbody tr:nth-of-type(even) {
+      background-color: #f3f3f3;
+    }
+
+    & tbody tr:last-of-type {
+      border-bottom: 2px solid $base-color;
+    }
+  }
+
+  &__error {
+    color: #d00000;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

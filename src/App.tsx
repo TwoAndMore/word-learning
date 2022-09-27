@@ -1,9 +1,10 @@
-import React from 'react';
 import './App.scss';
+import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { NavBar } from './components/NavBar/NavBar';
 import { Dictionary } from './components/Dictionary/Dictionary';
 import { AddAWord } from './components/AddAWord/AddAWord';
+import { History } from './components/History/History';
 import { WordsTest } from './components/WordsTest/WordsTest';
 import { Result } from './components/Result/Result';
 
@@ -21,6 +22,7 @@ export const App: React.FC = () => {
             <Route path="addAWord" element={<AddAWord />} />
             <Route path="test" element={<WordsTest />} />
             <Route path="result" element={<Result />} />
+            <Route path="history" element={<History />} />
 
             <Route path="*" element={<h1>Error :(</h1>} />
           </Routes>

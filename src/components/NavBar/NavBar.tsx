@@ -9,6 +9,7 @@ export const NavBar: React.FC = () => {
         <PageNavLink to="/" text="Dictionary" isEnd />
         <PageNavLink to="/addAWord" text="Add a Word" />
         <PageNavLink to="/test" text="Check yourself" />
+        <PageNavLink to="/history" text="History" />
       </ul>
     </nav>
   );

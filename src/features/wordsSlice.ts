@@ -5,10 +5,12 @@ import { randomizeArray } from '../helpers/randomizeArray';
 
 export type WordsState = {
   words: word[],
+  minTestWords: number,
 };
 
 const initialState: WordsState = {
   words: [],
+  minTestWords: 10,
 };
 
 export const wordsSlice = createSlice({
@@ -22,6 +24,7 @@ export const wordsSlice = createSlice({
 });
 
 export const selectWords = (state: RootState) => state.words.words;
+export const selectMinToTest = (state: RootState) => state.words.minTestWords;
 export const selectRandomWords = (
   state: RootState,
   currentTranslation: string,

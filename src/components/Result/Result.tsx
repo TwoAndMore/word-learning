@@ -1,12 +1,12 @@
 import './Result.scss';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
+import { selectScore } from '../../features/scoreSlice';
+import { selectMinToTest } from '../../features/wordsSlice';
 
 export const Result: React.FC = () => {
-  const [score, setScore] = useState('0');
-
-  useEffect(() => {
-    setScore(JSON.parse(localStorage.getItem('score') || score));
-  }, []);
+  const score = useSelector(selectScore);
+  const minTestWords = useSelector(selectMinToTest);
 
   return (
     <div className="result">
@@ -15,7 +15,7 @@ export const Result: React.FC = () => {
       </h2>
 
       <div className="result__value">
-        {score}
+        {(score / minTestWords) * 100}
         %
       </div>
     </div>
