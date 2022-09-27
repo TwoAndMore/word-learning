@@ -1,0 +1,42 @@
+@import "../../styles/utils/vars";
+
+.wordsTest {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__title {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+    font-weight: 700;
+    color: $base-color;
+  }
+
+  &__title--error {
+    color: #d00000;
+  }
+
+  &__title--access {
+    font-weight: 700;
+
+    animation: 2s beat infinite linear;
+  }
+
+  &__counter {
+    text-align: center;
+    margin-bottom: 4px;
+  }
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../styles/utils/vars";
+
+.addAWord {
+  display: flex;
+  justify-content: center;
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    border-radius: 4px;
+    background-color: #89bda5;
+  }
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 16px;
+  }
+
+  &__label-text {
+    margin-bottom: 6px;
+
+    color: #fff;
+    text-shadow: 2px 2px 3px black;
+  }
+
+  &__input {
+    height: 30px;
+    padding: 4px;
+
+    border: 2px solid $second-color;
+    border-radius: 4px;
+
+    &:focus {
+      border-color: $third-color;
+    }
+  }
+}

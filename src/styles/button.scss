@@ -1,0 +1,27 @@
+@import "utils/vars";
+
+.button {
+  width: 150px;
+  height: 40px;
+
+  color: #fff;
+
+  background-color: $base-color;
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: $second-color;
+  }
+
+  &:active {
+    background-color: $third-color;
+  }
+
+  &:disabled {
+    cursor: auto;
+
+    background-color: rgba(0, 80, 62, 0.36);
+  }
+}

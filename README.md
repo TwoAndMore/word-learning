@@ -1,9 +1,21 @@
-# React TypeScript Starter Pack
+# Word learning
 
-To use this template click `Use this template`
+## About
 
-### Available Scripts
+The main idea is that the user enters some words and their translation, 
+the user enters a certain number of words into the dictionary 
+and then can check whether he remembers them.
 
-`Deploy` - available to deploy your application to gh-pages
+[DEMO LINK](https://twoandmore.github.io/word-learning/)
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+## Preview
+
+![img.png](preview.png)
+
+## How to work with. Steps:
+
+1. Download or clone repository. `git clone https://github.com/TwoAndMore/word-learning.git`.
+2. Open project folder with code editor (VS Code, WebStorm, other).
+3. Run ```npm install``` in terminal.
+4. Open second terminal and run ```npm start```.
+5. If tab does not open, go to ```http://localhost:3000``` in your browser.

@@ -20,6 +20,8 @@ module.exports = {
     '@typescript-eslint/explicit-module-boundary-types': 0,
     '@typescript-eslint/ban-types': 0,
     '@typescript-eslint/semi': ['error'],
+
+    'no-param-reassign': ['error', { props: true, ignorePropertyModificationsFor: ['state'] }],
   },
   parser: '@typescript-eslint/parser',
   plugins: [
