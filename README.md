@@ -4,7 +4,7 @@
 
 The main idea is that the user enters some words and their translation, 
 the user enters a certain number of words into the dictionary 
-and then can check whether he remembers them.
+and then can check whether he remembers them. Also, you can see your test history.
 
 [DEMO LINK](https://twoandmore.github.io/word-learning/)
 
